@@ -23,8 +23,11 @@
 
 
 1:45:00 - 2:00:00 Coffee Break 
+
 2:00:00 - 2:20:00 Introduction to PyMoL and other Protein Viewers (e.g. Cn3D) 
-2:20:00 - 2:30:00 Setting up PyMoL on your own machine or logging into the VM open source PyMoL  OR, if student does not have access to PyMoL for some reason, let’s have a Notebook with Cn3D viewer available for the exercise just in case
+
+2:20:00 - 2:30:00 Setting up PyMoL on your own machine 
+
 2:30:00 - 3:30:00 Hands On Activity 
 
 * Loading files into PyMOL
