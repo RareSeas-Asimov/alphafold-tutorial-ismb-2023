@@ -8,8 +8,7 @@
 
 0:15:00 - 0:30:00 Introduction to the AlphaFold Tools and Database 
 
-0:30:00 - 0:45:00 Setting up the virtual environment for executing the tools 
-—- This now becomes running Colab Notebooks, since we are not at Tufts
+0:30:00 - 0:45:00 Setting up Colaboratory Notebooks to run code with a free Gmail account
 
 0:45:00 - 1:45:00 Hands On Activity 
 
