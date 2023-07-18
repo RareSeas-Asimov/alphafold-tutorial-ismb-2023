@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>03 Cas12a Variant Visualization - Alphafold Tutorial ISMB 2023</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "03 Cas12a Variant Visualization";
+        var mkdocs_page_input_path = "03_Cas12a_Variant_Visualization.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Alphafold Tutorial ISMB 2023
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="" href="../docs/index.md">About</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Tutorial</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="" href="../docs/00_introduction.md">Schedule</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../docs/01_CRISPR-Cas_Structural_Predictions_with_AlphaFold.pdf">Background</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../notebooks/AlphaFold.ipynb">Notebook Exercise</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../docs/02_AlphaFold2_Accuracy_Assessment.md">AlphaFold2 Acuracy Assessment</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../docs/03_Cas12a_Variant_Visualization.md">PyMOL Visualization</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Alphafold Tutorial ISMB 2023</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a> &raquo;</li>
+      <li>03 Cas12a Variant Visualization</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/Rare-Seas-Asimov/alphafold-tutorial-ismb-2023/blob/main/docs/03_Cas12a_Variant_Visualization.md" class="icon icon-github"> Edit on GitHub</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h2 id="cas12a-variant-visualization">Cas12a Variant Visualization</h2>
+<ul>
+<li>In the previous slide we plotted our MSA alignment, the pLDDT scores, and the predicted alignement error. However, it is also useful to visualize the actual predicted protein structure and compare it to the known structure if there is one. Here we use a software called PyMOL to do just that:</li>
+</ul>
+<p><img alt="" src="../images/pymolOverview.png" /></p>
+<ul>
+<li>Here we see that PyMOL takes either the PDB ID or a PDB file and creates a vizualization for us to examine. If you have not done so already please <a href="https://access.tufts.edu/pymol">download PyMOL</a>{:target="_blank" rel="noopener"} and open the app. You should see a window like the follwing:</li>
+</ul>
+<p><img alt="" src="../images/pymolSession.png" /></p>
+<ul>
+<li>Here we have a:</li>
+<li><strong>History Window</strong> with log of previous commands</li>
+<li><strong>Command Interface</strong> to enter PyMOL commands</li>
+<li><strong>List of Objects Loaded</strong> which list of objects/proteins that have been loaded into PyMOL</li>
+<li>
+<p><strong>Visualization Window</strong> to visualize protiens loaded into PyMOL</p>
+</li>
+<li>
+<p>Let's try on our data!</p>
+</li>
+</ul>
+<h2 id="download-alphafold-output">Download AlphaFold Output</h2>
+<ul>
+<li>First we will need to download our predicted structure pdb file for the mutant, Cas12a mut2-CWF. To this, go to <code>Files &gt; Home Directory</code>:</li>
+</ul>
+<h1 id="code-being-updated-in-the-notebook">code being updated in the notebook</h1>
+<ul>
+<li>Now, click on cas12a_af2 and download the following file, <code>mut2cwf.pdb</code>:</li>
+</ul>
+<h1 id="code-being-updated-in-the-notebook_1">code being updated in the notebook</h1>
+<h2 id="importing-structures">Importing Structures</h2>
+<ul>
+<li>To visualize this protein structure in PyMOL, open PyMOL on your computer</li>
+<li>Go to File &gt; Open - then choose your pdb file.</li>
+<li>The file we have loaded is the Cas12a-CWF mutant, let's fetch the structure for the wild type Cas12a protein:</li>
+</ul>
+<pre><code class="language-bash">#code being updated in the notebook
+
+fetch 5xus
+</code></pre>
+<ul>
+<li>We will now align this structure with the Cas12a-CWF mutant. So in the PyMOL command prompt enter:</li>
+</ul>
+<pre><code class="language-bash">#code being updated in the notebook
+
+align mut2cwf, 5xus
+</code></pre>
+<h2 id="viewingcoloring-structures">Viewing/Coloring Structures</h2>
+<ul>
+<li>To view one structure at a time, you can use the <code>disable</code> command to hide one of the structures:</li>
+</ul>
+<pre><code class="language-bash">#code being updated in the notebook
+
+disable 5xus
+</code></pre>
+<ul>
+<li>To see this structure again we can simply use the <code>enable</code> command:</li>
+</ul>
+<pre><code class="language-bash">#code being updated in the notebook
+
+enable 5xus
+</code></pre>
+<ul>
+<li>To change the color of our structures we can use the following command:</li>
+</ul>
+<pre><code class="language-bash">#code being updated in the notebook
+
+color lightblue, 5xus
+</code></pre>
+<pre><code class="language-bash">#code being updated in the notebook
+
+color salmon, mut2cwf
+</code></pre>
+<h2 id="visualizing-variants">Visualizing Variants</h2>
+<ul>
+<li>Now that we have aligned/colored our structures, let's select residues on the RuvC Domain on the Cas12a mut2-CWF and the Cas12a wild-type:</li>
+</ul>
+<pre><code class="language-bash">#code being updated in the notebook
+
+select resi 863+952+965+1214 and name CA
+</code></pre>
+<p>!!! note 
+    Note we are only selecting the alpha carbons so that when we label these residues we only have one label per residue</p>
+<ul>
+<li>To label these residues we can use the following:</li>
+</ul>
+<pre><code class="language-bash">#code being updated in the notebook
+
+
+label sele, &quot; %s%s&quot; % (resn,resi)
+</code></pre>
+<ul>
+<li>With these residues selected we can color them to visualize them easier:</li>
+</ul>
+<pre><code class="language-bash">#code being updated in the notebook
+
+color red, sele
+</code></pre>
+<ul>
+<li>Let's now zoom into this region:</li>
+</ul>
+<pre><code class="language-bash">#code being updated in the notebook
+
+zoom sele
+</code></pre>
+<ul>
+<li>To capture this image we can go to <code>File &gt; Export Image As &gt; PNG... &gt; Save PNG image as ...</code> and enter a name for your image!</li>
+<li>Alternatively, you can take a screen shot and save.</li>
+</ul>
+<p>??? question "Can you spot any disordered regions that AlphaFold2 may not have predicted well? Include an image displaying one of these regions. "</p>
+<p>??? question "<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9825149/">Ma et al. 2022</a> note that the Cas12a mut2-CWF has a more open active site than the wild type Cas12a. Disable the Cas12a mut2-CWF mutant and include an image of the wild type Cas12a. Then enable Cas12a mut2-CWF mutant, disable the wild type Cas12a and include an image of the Cas12a mut2-CWF mutant. Do you agree that the catalytic site appears more open in comparison to the wild type structure (5xus)?"</p>
+              
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/Rare-Seas-Asimov/alphafold-tutorial-ismb-2023" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
+    
+    
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
