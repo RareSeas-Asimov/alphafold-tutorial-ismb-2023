@@ -13,7 +13,7 @@
 
 - Request a free Gmail account to enable the Colaboratory Demo
 
-- [Download PyMOL](https://access.tufts.edu/pymol)
+- [Download PyMOL](https://www.pymol.org/2/#download)
 
 ## Schedule
 

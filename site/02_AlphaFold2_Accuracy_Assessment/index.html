@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../css/theme.css" />
     <link rel="stylesheet" href="../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+        <link href="../stylesheets/extra.css" rel="stylesheet" />
     
       <script>
         // Current page data
@@ -41,21 +42,8 @@
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul>
-                <li class="toctree-l1"><a class="" href="../docs/index.md">About</a>
+                <li class="toctree-l1"><a class="reference internal" href="..">About</a>
                 </li>
-              </ul>
-              <p class="caption"><span class="caption-text">Tutorial</span></p>
-              <ul>
-                  <li class="toctree-l1"><a class="" href="../docs/00_introduction.md">Schedule</a>
-                  </li>
-                  <li class="toctree-l1"><a class="" href="../docs/01_CRISPR-Cas_Structural_Predictions_with_AlphaFold.pdf">Background</a>
-                  </li>
-                  <li class="toctree-l1"><a class="" href="../notebooks/AlphaFold.ipynb">Notebook Exercise</a>
-                  </li>
-                  <li class="toctree-l1"><a class="" href="../docs/02_AlphaFold2_Accuracy_Assessment.md">AlphaFold2 Acuracy Assessment</a>
-                  </li>
-                  <li class="toctree-l1"><a class="" href="../docs/03_Cas12a_Variant_Visualization.md">PyMOL Visualization</a>
-                  </li>
               </ul>
       </div>
     </div>
@@ -103,18 +91,18 @@
 <ul>
 <li>To get our AlphaFold data we will enter:</li>
 </ul>
-<pre><code class="language-bash">#code being updated in the notebook
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="c1">#code being updated in the notebook</span>
+</code></pre></div>
 <ul>
 <li>Now let's go into this folder with the following command:</li>
 </ul>
-<pre><code class="language-bash">#code being updated in the notebook
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="c1">#code being updated in the notebook</span>
+</code></pre></div>
 <ul>
 <li>Given that AlphaFold2 can take anywhere from a few hours to a few days to run - AlphaFold2 predictions have already been generated for the Cas12a-CWF mutants from our study. We will use a script from the <a href="https://elearning.bits.vib.be/courses/alphafold/lessons/alphafold-on-the-hpc/topic/alphafold-outputs/">VIB Bioinformatics Core</a> to visualize the accuracy of AlphaFold2's predictions. First we will need to load the software needed to run that script:</li>
 </ul>
-<pre><code class="language-bash">#code being updated in the notebook
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="c1">#code being updated in the notebook</span>
+</code></pre></div>
 <ul>
 <li>
 <p>Now we will need to feed our script three arguments:</p>
@@ -125,11 +113,10 @@
 </ul>
 </li>
 </ul>
-<pre><code class="language-bash">
-#code being updated in the notebook
+<div class="highlight"><pre><span></span><code><span class="c1">#code being updated in the notebook</span>
 
-python af2_accuracy_viz.py --input_dir mut2cwf/5XUS_mut2cwf --output_dir ./ --name mut2cwf
-</code></pre>
+python<span class="w"> </span>af2_accuracy_viz.py<span class="w"> </span>--input_dir<span class="w"> </span>mut2cwf/5XUS_mut2cwf<span class="w"> </span>--output_dir<span class="w"> </span>./<span class="w"> </span>--name<span class="w"> </span>mut2cwf
+</code></pre></div>
 <ul>
 <li>
 <p>Running this will generate two images in your current directory:</p>
@@ -146,8 +133,12 @@ python af2_accuracy_viz.py --input_dir mut2cwf/5XUS_mut2cwf --output_dir ./ --na
 <ul>
 <li>You'll note that for the pLDDT plots, that the multiple sequence alignment is plotted with a bar on the side to tell you how similar those sequences were to your query sequence (in this case each of the Cas12a-CWF mutant)</li>
 </ul>
-<p>??? question "Do you see a region in the MSA plot that seems more conserved? How about less conserved?"</p>
-<p>??? question "How does this coverage seem to affect the confidence in each residues position in the pLDDT plots? "</p>
+<details class="question">
+<summary>Do you see a region in the MSA plot that seems more conserved? How about less conserved?</summary>
+</details>
+<details class="question">
+<summary>How does this coverage seem to affect the confidence in each residues position in the pLDDT plots? </summary>
+</details>
               
             </div>
           </div><footer>
@@ -182,6 +173,9 @@ python af2_accuracy_viz.py --input_dir mut2cwf/5XUS_mut2cwf --output_dir ./ --na
     <script>var base_url = '..';</script>
     <script src="../js/theme_extra.js" defer></script>
     <script src="../js/theme.js" defer></script>
+      <script src="../javascripts/mathjax.js" defer></script>
+      <script src="https://polyfill.io/v3/polyfill.min.js?features=es6" defer></script>
+      <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" defer></script>
       <script src="../search/main.js" defer></script>
     <script defer>
         window.onload = function () {

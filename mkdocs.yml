@@ -40,12 +40,32 @@ theme:
       prerequisite: octicons/beaker-16
       quote: octicons/quote-16
 
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - attr_list
+  - md_in_html
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+     
+
+extra_css:
+    - stylesheets/extra.css
+    
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 nav:
-    - About : docs/index.md
-    - Tutorial: 
-        - "Schedule": docs/00_introduction.md
-        - "Background": docs/01_CRISPR-Cas_Structural_Predictions_with_AlphaFold.pdf
-        - "Notebook Exercise": notebooks/AlphaFold.ipynb
-        - "AlphaFold2 Acuracy Assessment" : docs/02_AlphaFold2_Accuracy_Assessment.md
-        - "PyMOL Visualization": docs/03_Cas12a_Variant_Visualization.md
+    - About : 'index.md'
+

@@ -9,10 +9,11 @@
     <link rel="stylesheet" href="css/theme.css" />
     <link rel="stylesheet" href="css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+        <link href="stylesheets/extra.css" rel="stylesheet" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Home";
+        var mkdocs_page_name = "About";
         var mkdocs_page_input_path = "index.md";
         var mkdocs_page_url = null;
       </script>
@@ -40,22 +41,11 @@
       </div>
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <ul>
-                <li class="toctree-l1"><a class="" href="docs/index.md">About</a>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href=".">About</a>
+    <ul class="current">
+    </ul>
                 </li>
-              </ul>
-              <p class="caption"><span class="caption-text">Tutorial</span></p>
-              <ul>
-                  <li class="toctree-l1"><a class="" href="docs/00_introduction.md">Schedule</a>
-                  </li>
-                  <li class="toctree-l1"><a class="" href="docs/01_CRISPR-Cas_Structural_Predictions_with_AlphaFold.pdf">Background</a>
-                  </li>
-                  <li class="toctree-l1"><a class="" href="notebooks/AlphaFold.ipynb">Notebook Exercise</a>
-                  </li>
-                  <li class="toctree-l1"><a class="" href="docs/02_AlphaFold2_Accuracy_Assessment.md">AlphaFold2 Acuracy Assessment</a>
-                  </li>
-                  <li class="toctree-l1"><a class="" href="docs/03_Cas12a_Variant_Visualization.md">PyMOL Visualization</a>
-                  </li>
               </ul>
       </div>
     </div>
@@ -71,7 +61,7 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href="." class="icon icon-home" aria-label="Docs"></a> &raquo;</li>
-      <li>Home</li>
+      <li>About</li>
     <li class="wy-breadcrumbs-aside">
           <a href="https://github.com/Rare-Seas-Asimov/alphafold-tutorial-ismb-2023/blob/main/docs/index.md" class="icon icon-github"> Edit on GitHub</a>
     </li>
@@ -82,9 +72,9 @@
             <div class="section" itemprop="articleBody">
               
                 <h2 id="cas12a-variant-structural-predictions-with-alphafold2">Cas12a Variant Structural Predictions With AlphaFold2</h2>
-<p>!!! info ""</p>
-<pre><code>Presented as a Virtual Tutorial for the ISMB 2023 Meeting in Lyon, France
-</code></pre>
+<div class="admonition info">
+<p>Presented as a Virtual Tutorial for the ISMB 2023 Meeting in Lyon, France</p>
+</div>
 <h2 id="the-intrepid-trainers">The Intrepid Trainers</h2>
 <ul>
 <li>Geraldine Van de Auwera, Ph.D.</li>
@@ -96,7 +86,7 @@
 <p>Request a free Gmail account to enable the Colaboratory Demo</p>
 </li>
 <li>
-<p><a href="https://access.tufts.edu/pymol">Download PyMOL</a></p>
+<p><a href="https://www.pymol.org/2/#download">Download PyMOL</a></p>
 </li>
 </ul>
 <h2 id="schedule">Schedule</h2>
@@ -127,7 +117,7 @@
 <p>2:00:00 - 2:20:00 Introduction to PyMoL and other Protein Viewers (e.g. Cn3D) </p>
 <p>2:20:00 - 2:30:00 Setting up PyMoL on your own machine </p>
 <p>2:30:00 - 3:30:00 Hands On Activity</p>
-<p><a href="03_Cas12a_Variant_Vizualization/">Cas12a Variant Visualization</a></p>
+<p><a href="./03_Cas12a_Variant_Vizualization.md">Cas12a Variant Visualization</a></p>
 <ul>
 <li>Loading files into PyMOL</li>
 <li>Picking residues to highlight </li>
@@ -184,6 +174,9 @@
     <script>var base_url = '.';</script>
     <script src="js/theme_extra.js" defer></script>
     <script src="js/theme.js" defer></script>
+      <script src="javascripts/mathjax.js" defer></script>
+      <script src="https://polyfill.io/v3/polyfill.min.js?features=es6" defer></script>
+      <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" defer></script>
       <script src="search/main.js" defer></script>
     <script defer>
         window.onload = function () {
@@ -196,5 +189,5 @@
 
 <!--
 MkDocs version : 1.4.3
-Build Date UTC : 2023-07-18 03:58:43.613531+00:00
+Build Date UTC : 2023-07-18 11:23:01.484945+00:00
 -->
