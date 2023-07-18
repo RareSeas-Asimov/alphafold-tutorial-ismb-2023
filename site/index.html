@@ -77,13 +77,18 @@
 </div>
 <h2 id="the-intrepid-trainers">The Intrepid Trainers</h2>
 <ul>
-<li>Geraldine Van de Auwera, Ph.D.</li>
-<li>Adelaide Rhodes, Ph.D.</li>
+<li><a href="https://www.linkedin.com/in/geraldine-van-der-auwera-5a5811/">Geraldine Van de Auwera, Ph.D.</a>
+  Independent Consultant and Author of "Genomics in the Cloud"</li>
+<li><a href="https://www.linkedin.com/in/adelaide-rhodes-ph-d-376b9133/">Adelaide Rhodes, Ph.D.</a>
+  Senior Bioinformatics Engineer and proud owner of Blue</li>
 </ul>
 <h2 id="prerequisites">Prerequisites</h2>
 <ul>
 <li>
-<p>Request a free Gmail account to enable the Colaboratory Demo</p>
+<p><a href="https://support.google.com/mail/answer/56256?hl=en-EN">Request a free Gmail</a> account to enable the Colaboratory Demo</p>
+</li>
+<li>
+<p><a href="https://research.google.com/colaboratory/faq.html">FAQ for Colaboratory</a></p>
 </li>
 <li>
 <p><a href="https://www.pymol.org/2/#download">Download PyMOL</a></p>
@@ -92,20 +97,36 @@
 <h2 id="schedule">Schedule</h2>
 <h2 id="workshop-schedule">Workshop Schedule</h2>
 <h3 id="note-times-are-relative-to-the-start-and-end-times-of-the-tutorial">Note: Times are relative to the start and end times of the Tutorial</h3>
-<p>0:00:00 - 0:15:00 Introductory Lecture on the Protein Folding Problem and Artificial Intelligence Approach to the Solution </p>
+<p>0:00:00 - 0:15:00 Introductions  </p>
 <p>0:15:00 - 0:30:00 Introduction to the AlphaFold Tools and Database </p>
+<p><a href="Basics_of_AlphaFold/">Basics of AlphaFold</a></p>
 <p>0:30:00 - 0:45:00 Setting up Colaboratory Notebooks to run code with a free Gmail account</p>
+<p>We are going to use a streamlined version of AlphaFold that is available on publicly available notebooks with free compute resources. A gmail account is required for the initial sign in.</p>
+<p><a href="https://colab.research.google.com/github/sokrypton/ColabFold/blob/main/AlphaFold2.ipynb">ColabFold</a></p>
 <p>0:45:00 - 1:45:00 Hands On Activity </p>
 <ul>
-<li>Introduction to the Data Set used </li>
+<li>Introduction to the Data Sets used </li>
+</ul>
+<p><a href="01_CRISPR-Cas_Structural_Predictions_with_AlphaFold2.pdf">Introduction To Cas12a Variant Structural Predictions With AlphaFold2</a></p>
+<p><a href="https://academic.oup.com/nar/article/48/7/3722/5763098#supplementary-data">A second Cas12a mutant model</a></p>
+<p><img alt="Link to RVRR image" src="/images/LbCas12a_RVRR.png" /></p>
+<ul>
 <li>
-<p>Introduction to the Compute Environment
-<a href="01_CRISPR-Cas_Structural_Predictions_with_AlphaFold2.pdf">Introduction To Cas12a Variant Structural Predictions With AlphaFold2</a></p>
+<p>Introduction to the Compute Environment</p>
+</li>
+<li>
+<p>How to use a Google Colaboratory Notebook</p>
+</li>
+<li>
+<p>Different Options that can be Found in ColabFold</p>
+</li>
+<li>
+<p>Location of protein models from the Cas12a paper(s)</p>
 </li>
 <li>
 <p>Introduction to the Alphafold Command Line Parameters</p>
 </li>
-<li>View the Code in the <a href="https://colab.research.google.com/github/deepmind/alphafold/blob/main/notebooks/AlphaFold.ipynb">Notebooks</a> </li>
+<li>View the Code in the <a href="https://colab.research.google.com/github/sokrypton/ColabFold/blob/main/AlphaFold2.ipynb">Notebooks</a> </li>
 <li>Run Alphafold using Colaboratory Notebooks</li>
 </ul>
 <p><a href="02_AlphaFold2_Accuracy_Assessment/">AlphaFold2 Accuracy Assessment</a></p>
@@ -113,11 +134,16 @@
 <li>Review Alphafold results (RELAXED vs RELAXED_GPU)</li>
 <li>Download Alphafold results </li>
 </ul>
+<p>If Results were not accessible because of glitches with the notebook or runtime, here are the results that will be used in the next step.</p>
+<p><a href="https://github.com/RareSeas-Asimov/alphafold-tutorial-ismb-2023/blob/main/docs/LbCas12a_wildtype.pdb" title="LbCas12a_wildtype.pdb" download>LibCas12a_wildtype.pdb </a></p>
+<p><a href="https://github.com/RareSeas-Asimov/alphafold-tutorial-ismb-2023/blob/main/docs/LbCas12a_RVRR.pdb" title="LbCas12a_RVRR.pdb" download>LibCas12a_RVRR.pdb </a></p>
+<p><a href="https://github.com/RareSeas-Asimov/alphafold-tutorial-ismb-2023/blob/main/docs/LbCas12a_mut2B-W.pdb" title="LbCas12a_mut2B-W.pdb" download>LibCas12a_mut2B-W.pdb </a></p>
+<p><a href="https://github.com/RareSeas-Asimov/alphafold-tutorial-ismb-2023/blob/main/docs/LbCas12a_mut2B-W_with_template.pdb" title="LbCas12a_mut2B-W_with_template.pdb" download>LibCas12a_mut2B-W_with_template.pdb </a></p>
 <p>1:45:00 - 2:00:00 Coffee Break </p>
 <p>2:00:00 - 2:20:00 Introduction to PyMoL and other Protein Viewers (e.g. Cn3D) </p>
 <p>2:20:00 - 2:30:00 Setting up PyMoL on your own machine </p>
 <p>2:30:00 - 3:30:00 Hands On Activity</p>
-<p><a href="./03_Cas12a_Variant_Vizualization.md">Cas12a Variant Visualization</a></p>
+<p><a href="03_Cas12a_Variant_Visualization/">Cas12a Variant Visualization</a></p>
 <ul>
 <li>Loading files into PyMOL</li>
 <li>Picking residues to highlight </li>
@@ -189,5 +215,5 @@
 
 <!--
 MkDocs version : 1.4.3
-Build Date UTC : 2023-07-18 11:23:01.484945+00:00
+Build Date UTC : 2023-07-18 11:37:08.310905+00:00
 -->

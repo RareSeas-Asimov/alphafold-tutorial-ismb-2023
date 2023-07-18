@@ -45,7 +45,7 @@ We are going to use a streamlined version of AlphaFold that is available on publ
 
 [A second Cas12a mutant model](https://academic.oup.com/nar/article/48/7/3722/5763098#supplementary-data)
 
-![Link to RVRR image](/images/LbCas12a_RVRR.png)
+![Link to RVRR image](./images/LbCas12a_RVRR.png)
 
 * Introduction to the Compute Environment
 
